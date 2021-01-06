@@ -1,0 +1,211 @@
+.fondo {
+  /*fondo del body*/
+  background-color: black;
+  padding-right: 0px;
+  padding-left: 0px;
+  font-family: 'Londrina Solid', cursive; }
+
+h1 {
+  font-family: 'Monoton', cursive;
+  margin-top: auto; }
+
+h2 {
+  color: #2cacd1;
+  text-align: center;
+  padding-top: 40px; }
+
+h5 {
+  padding-top: 1%; }
+
+.carouselIndicadores li {
+  background-color: black;
+  border: none; }
+
+.carouselIndicadores .active {
+  background-color: grey; }
+
+.carousel_icon {
+  background-color: black; }
+
+header {
+  color: white; }
+  header a {
+    color: white !important;
+    font-family: "Londrina Solid", cursive;
+    font-size: 18px; }
+    header a:hover {
+      color: grey !important; }
+  header button .navbar-toggler-icon {
+    background-color: white; }
+  header .dropdown-menu {
+    /*pone este color al submenu*/
+    background: black; }
+    header .dropdown-menu a:hover {
+      background: none;
+      /*saca el fondo blanco al seleccionar el submenu*/ }
+
+.portada {
+  background-position: center;
+  text-align: center;
+  height: 350px;
+  width: 100%; }
+
+#myBtnContainer {
+  height: auto;
+  text-align: center; }
+  #myBtnContainer .btn {
+    color: white;
+    background-color: #2933ff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: 3% 1%; }
+
+.column {
+  float: left;
+  display: none;
+  /* Hide columns by default */ }
+
+.show {
+  display: block; }
+
+.div-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .div-img .imagen {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1); }
+  .div-img .text {
+    font-family: "Londrina Solid", cursive;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 100%;
+    transform: translate(0px);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    opacity: 0;
+    transition: transfom opacity 1.5s; }
+  .div-img:hover .imagen {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8); }
+  .div-img:hover .text {
+    transform: translate(0px, -20px);
+    opacity: 1; }
+
+.card {
+  background-color: transparent;
+  border: none;
+  margin: 3% 0; }
+  .card .card-body {
+    padding: 0px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: auto; }
+    .card .card-body .card-body__Titulojuego {
+      background-color: transparent;
+      text-align: center;
+      border: none;
+      color: white; }
+    .card .card-body .btn {
+      color: white;
+      background-color: #2933ff;
+      border: none; }
+    .card .card-body .modal-content {
+      background-color: #a3bded; }
+      .card .card-body .modal-content ul {
+        padding: 10px; }
+        .card .card-body .modal-content ul li {
+          list-style-position: inside;
+          padding: 0px; }
+      .card .card-body .modal-content iframe {
+        width: 100%;
+        height: 270px; }
+
+footer {
+  background-image: linear-gradient(to bottom, #3d3393 15%, #2b76b9 47%, #2cacd1 65%, #35eb93 100%);
+  font-family: "Londrina Solid", cursive;
+  color: black; }
+  footer .container__linkarriba {
+    text-align: center; }
+    footer .container__linkarriba a {
+      text-decoration: none;
+      font-size: 18px;
+      color: black; }
+
+form {
+  padding: 30px 15px;
+  font-family: "Londrina Solid", cursive; }
+  form label {
+    color: #2cacd1; }
+  form .form-group__emailYnombre {
+    margin: 20px 0px; }
+  form .form-check {
+    /*desea recibir nuestras ofertas*/
+    margin-bottom: 20px; }
+  form .form-group__Datos {
+    /*botones de enviar y limpiar datos*/
+    background: #2933ff;
+    border: none;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none; }
+
+@media only screen and (max-width: 364px) {
+  .card .text {
+    font-size: 14px;
+    padding-top: 3px; } }
+
+@media only screen and (max-width: 576px) {
+  form h2 {
+    font-size: 18px; }
+  .row {
+    justify-content: space-around; }
+  .col-xs-6 {
+    width: 50%;
+    padding-top: 5%; }
+  .col-xs-4 {
+    width: 30%;
+    padding: 0px; }
+  .centrar {
+    margin: 0% 2%;
+    margin-bottom: 10%; }
+  .centrar h2 {
+    font-size: 20px;
+    /*padding: 15px;*/ }
+  .portada {
+    height: 150px; }
+  .card-body__Titulojuego p {
+    font-size: 13px; }
+  .card-body button {
+    font-size: 15px; }
+  .modal-content h4 {
+    font-size: 15px; }
+  .modal-content p, ul {
+    font-size: 12px; } }
+
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 100%; }
+  .row {
+    justify-content: space-around; }
+  .centrar {
+    margin: 0% 10%;
+    margin-bottom: 3%; } }

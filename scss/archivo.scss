@@ -1,0 +1,184 @@
+$colorFondo: black;
+$colorletras: white;
+$colorboton: #2933ff;
+$font:'Londrina Solid', cursive;
+
+@import "_fondobody.scss";
+@import "_h.scss";
+@import"_accesoriosPS4.scss";
+
+//header//
+header{
+    color: $colorletras;
+    a{
+        color: $colorletras !important;
+        font-family: $font;
+        font-size: 18px;
+
+        &:hover{
+            color: grey !important;
+        }
+    }
+
+    button .navbar-toggler-icon{
+        background-color: $colorletras;
+    }
+
+    .dropdown-menu{ /*pone este color al submenu*/
+        background: $colorFondo;
+
+        & a:hover{
+            background: none; /*saca el fondo blanco al seleccionar el submenu*/
+        }
+    }
+}
+
+//centro//
+@mixin datosBoton ($color, $background, $border){
+    color: $color;
+    background-color: $background;
+    border: $border;
+}
+
+@mixin Filtro($display, $marginr,$marginl) {
+    display: $display;
+    margin-left: $marginr;
+    margin-right: $marginl;
+}
+
+@mixin transition($webkit,$moz,$ms,$o){
+    -webkit-transition: $webkit;
+    -moz-transition: $moz;
+    -ms-transition: $ms;
+    -o-transition: $o;  
+}
+
+.portada {
+    background-position: center;
+    text-align: center;
+    height: 350px;
+    width: 100%;
+    
+}
+
+#myBtnContainer{
+    height: auto;
+    text-align: center;
+    .btn{
+        @include datosBoton($colorletras,$colorboton ,none );
+        cursor: pointer;
+        outline: none;
+        margin: 3% 1%;
+    }
+}
+
+.column {
+    float: left;
+    display: none; /* Hide columns by default */
+}
+
+.show {
+    display: block;
+}
+
+.div-img{
+    @include Filtro( block,auto ,auto );
+    .imagen{
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        @include Filtro( block,auto ,auto );
+        width: 100%;   
+        transform:scale(1);
+        -ms-transform:scale(1); // IE 9 
+        -moz-transform:scale(1); // Firefox 
+        -webkit-transform:scale(1); // Safari and Chrome 
+        -o-transform:scale(1); // Opera    
+    }      
+
+    .text{
+        font-family: $font;
+        color: $colorletras;
+        display:block;
+        text-align: center;
+        width: 100%;   
+        transform:translate(0px);
+        @include transition(all 500ms ease-in-out,all 500ms ease-in-out ,all 500ms ease-in-out , all 500ms ease-in-out);  
+        opacity: 0;
+        transition: transfom opacity 1.5s;
+    }
+    &:hover{
+        .imagen{
+            transform:scale(0.8);
+            -ms-transform:scale(0.8); // IE 9 
+            -moz-transform:scale(0.8); // Firefox 
+            -webkit-transform:scale(0.8); // Safari and Chrome 
+            -o-transform:scale(0.8); // Opera
+        }
+        .text{
+            transform:translate(0px,-20px);
+            opacity: 1;
+        }
+    } 
+}
+
+.card{
+    background-color:transparent;
+    border: none;
+    margin: 3% 0;
+    
+    .card-body{
+        padding: 0px;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);   
+        height: auto;
+        
+        .card-body__Titulojuego{   
+            background-color: transparent;
+            text-align: center;
+            border: none;
+            color: $colorletras;
+        }
+
+        .btn{
+            @include datosBoton($colorletras, $colorboton ,none );
+        }
+        
+        .modal-content{
+            background-color: #a3bded;
+            ul{
+                padding: 10px;
+                li{
+                    list-style-position: inside;
+                    padding: 0px;
+                }
+            }
+            iframe{
+                width: 100%;
+                height: 270px;
+            }
+        }
+    }
+}
+
+//footer//
+footer{
+    background-image: linear-gradient(to bottom, #3d3393 15%, #2b76b9 47%, #2cacd1 65%, #35eb93 100%);
+    font-family: $font;
+    color:black;
+
+    .container__linkarriba{
+        text-align: center;
+        a{
+            text-decoration: none;
+            font-size: 18px;
+            color:black;
+        }
+    }
+}
+
+@import "_contacto.scss";
+@import "_queries.scss";
+
+
+

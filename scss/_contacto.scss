@@ -1,0 +1,24 @@
+$colorboton: #2933ff;
+$font:'Londrina Solid', cursive;
+
+form{
+    padding: 30px 15px;
+    font-family: $font;
+    label{
+        color: #2cacd1 ;
+    }
+    .form-group__emailYnombre{
+        margin: 20px 0px;
+    }
+    .form-check{ /*desea recibir nuestras ofertas*/
+        margin-bottom: 20px;
+    }
+    .form-group__Datos{ /*botones de enviar y limpiar datos*/
+        background: $colorboton;
+        border: none;
+        margin: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        outline: none; // saca el borde de los input al hacer clic//
+    }
+}

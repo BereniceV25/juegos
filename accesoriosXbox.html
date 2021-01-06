@@ -1,0 +1,636 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Hey gamer es una pagina de venta de video juegos Xbox y accesorios gamer. Podras encontrar promociones, descuentos y nuevos ingresos.">
+    <meta name="keywords" content="Xbox, xbox one juegos, ofertas, Gamer, joystick, consola">
+    
+    <title>Accesorios Xbox</title>
+        
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+        
+    <!--Letras-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container fondo">
+        <header id="arriba">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <h1>Hey gamer</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PlayStation
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="juegos.html">Juegos</a>
+                                <a class="dropdown-item" href="AccesoriosPS4.html">Accesorios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Xbox
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="xbox.html">Juegos</a>
+                                <a class="dropdown-item" href="#.html">Accesorios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactanos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container fondo">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 portada" src="imagenes_carrousel/xbox2.jpg" alt="Second slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100 portada" src="imagenes_carrousel/joy_xbox2.jpg" alt="Second slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="row centrar">
+
+                <div id="myBtnContainer" class="col-sm-12">
+                    <button class="btn active" onclick="filterSelection('todos')">Todos</button>
+                    <button class="btn" onclick="filterSelection('consola')">Consolas</button>
+                    <button class="btn" onclick="filterSelection('joystick')">Joysticks</button>
+                   
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column joystick">        
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="xbox_acceso/joy.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="xbox_acceso/joy2.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                            <div class="card-body__Titulojuego">
+                                <div>
+                                    <p class="card-text">Joystick</p>
+                                </div>
+                                <div>
+                                    <p class="card-text">$12000</p>
+                                </div> 
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal">
+                                Detalles
+                                </button>
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Joystick inalámbrico Microsoft Xbox One Controller + Cable for Windows negro
+                                                    </h4>
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <p>
+                                                        Control preciso
+                                                        Este mando combina funciones revolucionarias mientras conserva precisión, comodidad y exactitud en cada movimiento.
+                                                        Diseño inteligente
+                                                        Gracias a su ergonomía especialmente pensada para la posición de tu mano, podés pasar horas jugando con total confort.
+                                                    </p>
+                                                    <p>
+                                                        <ul>Características:
+                                                            <li>Inalámbrico</li>
+                                                            <li>Con vibración</li>
+                                                            <li>No tiene touchpad</li>
+                                                            <li>Con bluetooth</li>
+                                                            <li>No tiene detección de movimiento</li>
+                                                        </ul>
+                                                     </p>
+                                                </div>
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column joystick">
+
+                    <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="xbox_acceso/joy_blanco.png" alt="Second slide">
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">Joystick</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$12300</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal2">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal2">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Joystick Blanco</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <p>
+                                                    Control preciso
+                                                    Este mando combina funciones revolucionarias mientras conserva precisión, comodidad y exactitud en cada movimiento.
+                                                    Diseño inteligente
+                                                    Gracias a su ergonomía especialmente pensada para la posición de tu mano, podés pasar horas jugando con total confort.
+                                                </p>
+                                                <p>
+                                                    <ul>Características:
+                                                        <li>Inalámbrico</li>
+                                                        <li>Con vibración</li>
+                                                        <li>No tiene touchpad</li>
+                                                        <li>Con bluetooth</li>
+                                                        <li>No tiene detección de movimiento</li>
+                                                    </ul>
+                                                </p>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="card col-xs-6 col-sm-4 column consola">
+                    
+                    <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="xbox_acceso/consola.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">Consola Xbox</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$57500</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal3">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal3">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Microsoft Xbox One S 1TB Fortnite Battle Royale Special Edition violeta gradiente</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <p>
+                                                    No solo vas a poder descargar los mejores videojuegos y navegar en la web sin límite, sino que, gracias a su interconectividad global, también vas a tener la posibilidad de competir en línea con tus amigos y con personas de todas partes del mundo disfrutando de aventuras inolvidables. 
+                                                </p>
+                                                <ul>Características:
+                                                    <li>Con Wi-fi</li>
+                                                    <li>Tipo de consola: de sobremesa</li>
+                                                    <li>Incluye 1 control</li>
+                                                    <li>Controles inalámbricos</li>
+                                                    <li>Memoria RAM 8 GB</li>
+                                                    <li>Tipo de memoria: DDR3</li>
+                                                    <li>Resolución máxima de salida de video: 3840 px x 2160 px</li>
+                                                    <li>CPU: AMD Jaguar</li>
+                                                    <li>Cantidad de núcleos de CPU: 8</li>
+                                                    <li>Velocidad del procesador: 1.75 GHz</li>
+                                                    <li>GPU: AMD Radeon</li>
+                                                    <li>Formatos de juegos: Ultra HD Blu-ray, Blu-ray, DVD, Digital</li>
+                                                    <li>Con HDMI: Sí</li>
+                                                    <li>Con USB: Sí</li>
+                                                    <li>Con S/PDIF: Sí</li>
+                                                    <li>Accesorios incluidos: Suscripción a Xbox Live Gold por 1 mes, Suscripción a Xbox game pass por 1 mes, 2000 V-Bucks, 1 Dark Vertex cosmetic set</li>
+                                                    <li>Peso: 2.9 kg</li>
+                                                    <li>Altura x Ancho x Profundidad: 63.5 mm x 294.64 mm x 228.6 mm</li>
+                                                    <li>Títulos de juegos incluidos: Fortnite</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column consola">
+                    <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="xbox_acceso/consola_blanca.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="xbox_acceso/consola_blanca2.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">Consola Xbox Blanca</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$52000</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal4">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal4">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Microsoft Xbox One S 1TB Standard blanco</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <p>
+                                                    No solo vas a poder descargar los mejores videojuegos y navegar en la web sin límite, sino que, gracias a su interconectividad global, también vas a tener la posibilidad de competir en línea con tus amigos y con personas de todas partes del mundo disfrutando de aventuras inolvidables.
+                                                </p>
+                                                <ul>Características:
+                                                    <li>Con Wi-Fi: Sí</li>
+                                                    <li>Tipo de consola: De sobremesa</li>
+                                                    <li>Cantidad de controles incluidos: 1</li>
+                                                    <li>Conectividad de los controles: Inalámbrico</li>
+                                                    <li>Memoria RAM: 8 GB</li>
+                                                    <li>Tipos de memoria: DDR3</li>
+                                                    <li>Resolución máxima de salida de video: 3840 px x 2160 px</li>
+                                                    <li>CPU: AMD Jaguar</li>
+                                                    <li>Cantidad de núcleos de CPU: 8</li>
+                                                    <li>Velocidad del procesador: 1.75 GHz</li>
+                                                    <li>GPU: AMD Radeon</li>
+                                                    <li>Formatos de juegos: Ultra HD Blu-ray, Blu-ray, DVD, CD, Digital</li>
+                                                    <li>Con HDMI: Sí</li>
+                                                    <li>Con USB: Sí</li>
+                                                    <li>Con Bluetooth: No</li>
+                                                    <li>Con S/PDIF: Sí</li>
+                                                    <li>Accesorios incluidos: 1 cable HDMI, 1 cable de alimentación AC</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column joystick">
+                    
+                    <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="xbox_acceso/joy_rojo.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="xbox_acceso/joy_rojo2.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">Joystick rojo</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$12200</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal5">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal5">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Joystick inalámbrico Microsoft Xbox One red<h4>                  
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <p>
+                                                    Control preciso
+                                                    Este mando combina funciones revolucionarias mientras conserva precisión, comodidad y exactitud en cada movimiento.
+                                                    Diseño inteligente
+                                                    Gracias a su ergonomía especialmente pensada para la posición de tu mano, podés pasar horas jugando con total confort.
+                                                </p>
+                                                <p>
+                                                    <ul>Características:
+                                                        <li>Inalámbrico</li>
+                                                        <li>Con vibración</li>
+                                                        <li>No tiene touchpad</li>
+                                                        <li>Con bluetooth</li>
+                                                        <li>No tiene detección de movimiento</li>
+                                                    </ul>
+                                                 </p>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column consola">
+
+                    <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="xbox_acceso/consola_negra.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">Consola negra</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$50000</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal6">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal6">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">
+                                                    Xbox One 500gb</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <p>
+                                                    No solo vas a poder descargar los mejores videojuegos y navegar en la web sin límite, sino que, gracias a su interconectividad global, también vas a tener la posibilidad de competir en línea con tus amigos y con personas de todas partes del mundo disfrutando de aventuras inolvidables.
+                                                </p>
+                                                <ul>Características:
+                                                    <li>Con Wi-Fi: Sí</li>
+                                                    <li>Tipo de consola: De sobremesa</li>
+                                                    <li>Cantidad de controles incluidos: 1</li>
+                                                    <li>Conectividad de los controles: Inalámbrico</li>
+                                                    <li>Memoria RAM: 8 GB</li>
+                                                    <li>Tipos de memoria: DDR3</li>
+                                                    <li>Resolución máxima de salida de video: 3840 px x 2160 px</li>
+                                                    <li>CPU: AMD Jaguar</li>
+                                                    <li>Cantidad de núcleos de CPU: 8</li>
+                                                    <li>Velocidad del procesador: 1.75 GHz</li>
+                                                    <li>GPU: AMD Radeon</li>
+                                                    <li>Formatos de juegos: Ultra HD Blu-ray, Blu-ray, DVD, CD, Digital</li>
+                                                    <li>Con HDMI: Sí</li>
+                                                    <li>Con USB: Sí</li>
+                                                    <li>Con Bluetooth: No</li>
+                                                    <li>Con S/PDIF: Sí</li>
+                                                    <li>Accesorios incluidos: 1 cable HDMI, 1 cable de alimentación AC</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>   
+        </div>
+    
+        <footer class="bg-light text-center text-lg-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">MEDIOS DE PAGO</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Mercado Pago: ofertas disponibles del sitio
+                            </li>
+                            <li>
+                                Tarjeta de débito
+                            </li>
+                            <li>
+                                Tarjeta de crédito
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">MEDIOS DE ENVIO</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Retiro por local
+                            </li>
+                            <li>
+                                Envío gratis a partir de los $15000
+                            </li>
+                            <li>
+                                Importes menores consultar envío
+                            </li>
+                        </ul>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">DATOS DEL LOCAL</h5>
+            
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Dirección: Avenida Siempreviva 742
+                            </li>
+                            <li>
+                                Teléfono: 41234567
+                            </li>
+                            <li>
+                                Horarios: Lunes a Viernes:10 a 20hs. Sábados 10 a 14 hs.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__linkarriba">
+                <a href="#arriba">Volver arriba</a>
+            </div>
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+              © 2021 Copyright. Todos los derechos reservados. Berenice Villarroel.
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!--Java-->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

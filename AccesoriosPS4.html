@@ -1,0 +1,1083 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content=" Hey gamer es una pagina de venta de video juegos PlayStation y accesorios gamer. Podras encontrar promociones, descuentos y nuevos ingresos.">
+    <meta name="keywords" content="PS4, PlayStation, juegos, ofertas, Gamer" >
+    
+    <title>Accesorios</title>
+        
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+        
+    <!--Letras-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container fondo">
+        <header id="arriba">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <h1>Hey gamer</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PlayStation
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="juegos.html">Juegos</a>
+                                <a class="dropdown-item" href="AccesoriosPS4.html">Accesorios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Xbox
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="xbox.html">Juegos</a>
+                                <a class="dropdown-item" href="accesoriosXbox.html">Accesorios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactanos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container fondo">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 portada" src="imagenes_carrousel/joy_wallpaper.jpg" alt="Second slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100 portada" src="imagenes_carrousel/PS4_j.jpeg" alt="Second slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="row centrar">
+                <h2 class="col-sm-12">ACCESORIOS PLAYSTATION</h2>
+
+                <div id="myBtnContainer" class="col-sm-12">
+                    <button class="btn active" onclick="filterSelection('todos')">Todos</button>
+                    <button class="btn" onclick="filterSelection('auri')">Auriculares</button>
+                    <button class="btn" onclick="filterSelection('camara')">Camara</button>
+                    <button class="btn" onclick="filterSelection('dualshock')">Dualshock</button>
+                    <button class="btn" onclick="filterSelection('pack')">Pack</button>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column camara">             
+                    <!--hay que cambiar carouselExampleIndicators en todos para que funcione el carrousel en cada uno-->      
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/camara-HD.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/camara-HD2.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                            <div class="card-body__Titulojuego">
+                                <div>
+                                    <p class="card-text">Camara HD</p>
+                                </div>
+                                <div>
+                                    <p class="card-text">$7500</p>
+                                </div> 
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal">
+                                Detalles
+                                </button>
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Camara HD para play 5
+                                                    </h4>
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <p>Dado que cuenta con lentes duales para capturar a 1080p y un soporte integrado, la cámara HD funciona a la perfección con las herramientas de eliminación de fondos de la consola PS5 para ponerte en el centro de la atención.
+                                                    </p>
+                                                    <p>
+                                                        <ul>Características:
+                                                            <li>1080p</li>
+                                                            <li>HD funciona</li>
+                                                            <li>Con lentes duales para capturar</li>
+                                                        </ul>
+                                                     </p>
+                                                </div>
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column dualshock">
+
+                    <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_rose.png" alt="Second slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_rose2.png" alt="Second slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_rose3.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">DUALSHOCK</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$8000</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal2">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal2">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">DUALSHOCK Rose Gold</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <ul>Características:
+                                                    <li>Dimensiones exteriores: Aprox. 162 mm x 52 mm x 98 mm (ancho x alto x profundo)</li>
+                                                    <li>Peso: 210 g aprox</li>
+                                                    <li>Teclas/Interruptores: Botones de acción (triángulo, círculo, cruz, cuadrado), Botones de dirección (arriba/abajo/izquierda/derecha), Botón OPTIONS, Botón PS, Botón de almohadilla, R1/L1/R2/L2, Joystick izquierdo / botón L3, Joystick derecho / botón R3, Botón SHARE</li>
+                                                    <li>Almohadilla táctil: Almohadilla táctil de 2 puntos, mecanismo "pulsar", tipo capacitivo</li>
+                                                    <li>Sensor de movimiento: Sistema sensor de movimiento de seis ejes (tres ejes giroscopio, tres ejes acelerómetro)</li>
+                                                    <li>Otras funciones: Barra de luces, vibración, parlante mono integrado</li>
+                                                    <li>Puertos: USB (Micro B), puerto de ampliación, conector para auriculares estéreo</li>
+                                                    <li>Comunicación inalámbrica: Bluetooth® Ver2.1+EDR</li>
+                                                    <li>Tipo de batería: Batería recargable de iones de litio integrada</li>
+                                                    <li>Voltaje de la batería: CD 3,7 V</li>
+                                                    <li>Capacidad de la batería: 1000 mAh</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="card col-xs-6 col-sm-4 column dualshock">
+                    
+                    <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_red.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_red2.png" alt="Second slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_red3.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">DUALSHOCK red</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$8500</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal3">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal3">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">DUALSHOCK Red</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <ul>Características:
+                                                    <li>Dimensiones exteriores: Aprox. 162 mm x 52 mm x 98 mm (ancho x alto x profundo)</li>
+                                                    <li>Peso: 210 g aprox</li>
+                                                    <li>Teclas/Interruptores: Botones de acción (triángulo, círculo, cruz, cuadrado), Botones de dirección (arriba/abajo/izquierda/derecha), Botón OPTIONS, Botón PS, Botón de almohadilla, R1/L1/R2/L2, Joystick izquierdo / botón L3, Joystick derecho / botón R3, Botón SHARE</li>
+                                                    <li>Almohadilla táctil: Almohadilla táctil de 2 puntos, mecanismo "pulsar", tipo capacitivo</li>
+                                                    <li>Sensor de movimiento: Sistema sensor de movimiento de seis ejes (tres ejes giroscopio, tres ejes acelerómetro)</li>
+                                                    <li>Otras funciones: Barra de luces, vibración, parlante mono integrado</li>
+                                                    <li>Puertos: USB (Micro B), puerto de ampliación, conector para auriculares estéreo</li>
+                                                    <li>Comunicación inalámbrica: Bluetooth® Ver2.1+EDR</li>
+                                                    <li>Tipo de batería: Batería recargable de iones de litio integrada</li>
+                                                    <li>Voltaje de la batería: CD 3,7 V</li>
+                                                    <li>Capacidad de la batería: 1000 mAh</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column dualshock">
+                    <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_GLACIARWHITE.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_GLACIARWHITE2.png" alt="Second slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_GLACIARWHITE3.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">DUALSHOCK white</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$8000</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal4">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal4">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">DUALSHOCK glaciar white</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <ul>Características:
+                                                    <li>Dimensiones exteriores: Aprox. 162 mm x 52 mm x 98 mm (ancho x alto x profundo)</li>
+                                                    <li>Peso: 210 g aprox</li>
+                                                    <li>Teclas/Interruptores: Botones de acción (triángulo, círculo, cruz, cuadrado), Botones de dirección (arriba/abajo/izquierda/derecha), Botón OPTIONS, Botón PS, Botón de almohadilla, R1/L1/R2/L2, Joystick izquierdo / botón L3, Joystick derecho / botón R3, Botón SHARE</li>
+                                                    <li>Almohadilla táctil: Almohadilla táctil de 2 puntos, mecanismo "pulsar", tipo capacitivo</li>
+                                                    <li>Sensor de movimiento: Sistema sensor de movimiento de seis ejes (tres ejes giroscopio, tres ejes acelerómetro)</li>
+                                                    <li>Otras funciones: Barra de luces, vibración, parlante mono integrado</li>
+                                                    <li>Puertos: USB (Micro B), puerto de ampliación, conector para auriculares estéreo</li>
+                                                    <li>Comunicación inalámbrica: Bluetooth® Ver2.1+EDR</li>
+                                                    <li>Tipo de batería: Batería recargable de iones de litio integrada</li>
+                                                    <li>Voltaje de la batería: CD 3,7 V</li>
+                                                    <li>Capacidad de la batería: 1000 mAh</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column dualshock">
+                    
+                    <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_MIDNIGHT_BLUE.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_MIDNIGHT_BLUE2.png" alt="Second slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_MIDNIGHT_BLUE3.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">DUALSHOCK Midnight Blue</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$8000</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal5">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal5">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">DUALSHOCK Midnight Blue<h4>                  
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <ul>Características:
+                                                    <li>Dimensiones exteriores: Aprox. 162 mm x 52 mm x 98 mm (ancho x alto x profundo)</li>
+                                                    <li>Peso: 210 g aprox</li>
+                                                    <li>Teclas/Interruptores: Botones de acción (triángulo, círculo, cruz, cuadrado), Botones de dirección (arriba/abajo/izquierda/derecha), Botón OPTIONS, Botón PS, Botón de almohadilla, R1/L1/R2/L2, Joystick izquierdo / botón L3, Joystick derecho / botón R3, Botón SHARE</li>
+                                                    <li>Almohadilla táctil: Almohadilla táctil de 2 puntos, mecanismo "pulsar", tipo capacitivo</li>
+                                                    <li>Sensor de movimiento: Sistema sensor de movimiento de seis ejes (tres ejes giroscopio, tres ejes acelerómetro)</li>
+                                                    <li>Otras funciones: Barra de luces, vibración, parlante mono integrado</li>
+                                                    <li>Puertos: USB (Micro B), puerto de ampliación, conector para auriculares estéreo</li>
+                                                    <li>Comunicación inalámbrica: Bluetooth® Ver2.1+EDR</li>
+                                                    <li>Tipo de batería: Batería recargable de iones de litio integrada</li>
+                                                    <li>Voltaje de la batería: CD 3,7 V</li>
+                                                    <li>Capacidad de la batería: 1000 mAh</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column dualshock">
+
+                    <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators7" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_MAGMA.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_MAGMA2.png" alt="Second slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_MAGMA3.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">DUALSHOCK MAGMA</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$8000</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal6">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal6">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">DUALSHOCK MAGMA RED</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <ul>Características:
+                                                    <li>Dimensiones exteriores: Aprox. 162 mm x 52 mm x 98 mm (ancho x alto x profundo)</li>
+                                                    <li>Peso: 210 g aprox</li>
+                                                    <li>Teclas/Interruptores: Botones de acción (triángulo, círculo, cruz, cuadrado), Botones de dirección (arriba/abajo/izquierda/derecha), Botón OPTIONS, Botón PS, Botón de almohadilla, R1/L1/R2/L2, Joystick izquierdo / botón L3, Joystick derecho / botón R3, Botón SHARE</li>
+                                                    <li>Almohadilla táctil: Almohadilla táctil de 2 puntos, mecanismo "pulsar", tipo capacitivo</li>
+                                                    <li>Sensor de movimiento: Sistema sensor de movimiento de seis ejes (tres ejes giroscopio, tres ejes acelerómetro)</li>
+                                                    <li>Otras funciones: Barra de luces, vibración, parlante mono integrado</li>
+                                                    <li>Puertos: USB (Micro B), puerto de ampliación, conector para auriculares estéreo</li>
+                                                    <li>Comunicación inalámbrica: Bluetooth® Ver2.1+EDR</li>
+                                                    <li>Tipo de batería: Batería recargable de iones de litio integrada</li>
+                                                    <li>Voltaje de la batería: CD 3,7 V</li>
+                                                    <li>Capacidad de la batería: 1000 mAh</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column dualshock">
+                    
+                    <div id="carouselExampleIndicators8" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators8" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators8" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators8" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_GREEN.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_GREEN2.png" alt="Second slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/DUALSHOCK_GREEN3.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators8" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators8" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">DUALSHOCK Green</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$8500</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal7"> 
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal7">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">DUALSHOCK Green Camouflage</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <ul>Características:
+                                                    <li>Dimensiones exteriores: Aprox. 162 mm x 52 mm x 98 mm (ancho x alto x profundo)</li>
+                                                    <li>Peso: 210 g aprox</li>
+                                                    <li>Teclas/Interruptores: Botones de acción (triángulo, círculo, cruz, cuadrado), Botones de dirección (arriba/abajo/izquierda/derecha), Botón OPTIONS, Botón PS, Botón de almohadilla, R1/L1/R2/L2, Joystick izquierdo / botón L3, Joystick derecho / botón R3, Botón SHARE</li>
+                                                    <li>Almohadilla táctil: Almohadilla táctil de 2 puntos, mecanismo "pulsar", tipo capacitivo</li>
+                                                    <li>Sensor de movimiento: Sistema sensor de movimiento de seis ejes (tres ejes giroscopio, tres ejes acelerómetro)</li>
+                                                    <li>Otras funciones: Barra de luces, vibración, parlante mono integrado</li>
+                                                    <li>Puertos: USB (Micro B), puerto de ampliación, conector para auriculares estéreo</li>
+                                                    <li>Comunicación inalámbrica: Bluetooth® Ver2.1+EDR</li>
+                                                    <li>Tipo de batería: Batería recargable de iones de litio integrada</li>
+                                                    <li>Voltaje de la batería: CD 3,7 V</li>
+                                                    <li>Capacidad de la batería: 1000 mAh</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column camara">
+                    
+                    <div id="carouselExampleIndicators9" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators9" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators9" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/camara.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/camara2.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators9" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators9" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">Camara PlayStation</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$8500</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal8"> 
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal8">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Camara PlayStation</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <ul>Características:
+                                                    <li>Longitud del cable: aprox 2 m</li>
+                                                    <li>Dimensiones exteriores: Aprox. 186 mm x 27 mm x 27 mm (ancho x alto x profundidad)</li>
+                                                    <li>Peso: 183g aprox</li>
+                                                    <li>Píxeles de video: (Maximo) 1280*800 píxeles x2</li>
+                                                    <li>Velocidad de fotogramas de video: 1280 X 800 píxeles a 60 fps</li>
+                                                    <li>Formato de video: RAW, YUV (sin comprimir)</li>
+                                                    <li>Lente: Doble lente, Valor F/distancia focal fija F2.0</li>
+                                                    <li>Rango de captura: 30cm-8</li>
+                                                    <li>Camara visual: 85°</li>
+                                                    <li>Micrófono: Matriz de micrófonos de 4 canales</li>
+                                                    <li>Tiempo de conexión: Conector dedicado PS4 (conector AUX)</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column auri">
+                    
+                    <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators10" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators10" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators10" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/AU_PULSE3D.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/AU_PULSE3D2.png" alt="Second slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/AU_PULSE3D3.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators10" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators10" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">Auriculares</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$17000</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal9">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal9">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Auriculares inalámbricos PULSE 3D</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <p>Disfruta de una experiencia inalámbrica perfecta con unos auriculares ajustados para el audio 3D en las consolas PS5™*. Los auriculares inalámbricos PULSE 3D™ tienen un diseño elegante con micrófonos dobles con reducción de ruido, arga a través de USB Type-C® y una variedad de controles de fácil acceso.
+                                                </p> 
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="card col-xs-6 col-sm-4 column auri">
+                    
+                    <div id="carouselExampleIndicators11" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators11" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators11" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators11" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/AU_GOLD.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/AU_GOLD2.png" alt="Second slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/AU_GOLD3.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators11" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators11" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">Auriculares Gold</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$19000</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal10">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal10">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">PS4 Gold Wireless Headset
+
+                                                </h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <p>Escucha a los enemigos que todavía no has visto y sumérgete en la acción más explosiva con sonido virtual envolvente 7.1 en los juegos de PS4*.
+                                                    Habla con tus amigos y planea tácticas con tus compañeros de equipo* con gran nitidez gracias a los micrófonos ocultos de anulación de ruido colocados en varias posiciones.
+                                                    Crea tus propias configuraciones de audio o emplea los modos creados por los desarrolladores específicamente para sus juegos mediante la App adicional de los auriculares de PS4***.
+                                                    Ajusta la configuración mientras juegas con los controles de volumen y silenciado del micrófono integrados.
+                                                </p>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column pack">
+                    
+                    <div id="carouselExampleIndicators12" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators12" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators12" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators12" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/PACK.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/PACK2.png" alt="Second slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/PACK3.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators12" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators12" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">Pack de Playstation</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$65000</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal11">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal11">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Mega Pack de Playstation VR</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <p>El megapaquete de PlayStation® VR ahora está disponible en una versión actualizada de gran valor que te lleva directo al corazón de cinco juegos de realidad virtual repletos de emoción y acción inmersiva. Este paquete contiene todo lo que necesitas para comenzar tus nuevas aventuras en realidad virtual, incluido el casco de PlayStation®VR y una PlayStation®Camera. 
+                                                </p> 
+                                                <p>
+                                                <ul>Características:
+                                                    <li>vision de 360°: Absorbe cada segundo de la accion a través de una pantalla OLED de 5.7 pulgadas, con gráficos nítidos y una latencia muy baja</li>
+                                                    <li>Audio 3D: Oye los pasos que se acercan o los gritos que resuenan a la distancia con precisión milimétrica gracias a un sonido envolvente innovado.</li>
+                                                    <li>Controles intuitivos: Un completo sistema de seguimiento se encarga de captar cada uno de los movimientos del control inalámbrico DUALSHOCK®4, el control de movimiento PlayStation®Move o el control pistola PlayStation®VR.</li>
+                                                    <li>Micrófono integrado: Chatea con tus amigos para intercambiar sugerencias y tácticas con el micrófono integrado.</li>
+                                                    <li>Talle único: El casco de PS VR está diseñado para que sea fácil de poner y sacar; tiene una diadema ajustable y un alcance óptico para lograr el ajuste perfecto.</li>
+                                                    <li>Dimensiones: 18" x 10.6" x 8.4"</li>
+                                                    <li>Modelo: CUH-ZVR2</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-xs-6 col-sm-4 column auri">
+                    
+                    <div id="carouselExampleIndicators13" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carouselIndicadores">
+                            <li data-target="#carouselExampleIndicators13" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators13" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagenes_accesorios/AURI_TLOU.png" alt="Second slide">
+                            </div>
+        
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagenes_accesorios/AURI_TLOU2.png" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators13" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators13" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-body__Titulojuego">
+                            <div>
+                                <p class="card-text">Auriculares Gold</p>
+                            </div>
+                            <div>
+                                <p class="card-text">$20000</p>
+                            </div> 
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal12">
+                            Detalles
+                            </button>
+                                <div class="modal fade" id="myModal12">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">PS4 Gold WLS Headset - The Last of Us 2</h4>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <p>Escucha a los enemigos que todavía no has visto y sumérgete en la acción más explosiva con sonido virtual envolvente 7.1 en los juegos de PS4*.
+                                                    Habla con tus amigos y planea tácticas con tus compañeros de equipo* con gran nitidez gracias a los micrófonos ocultos de anulación de ruido colocados en varias posiciones.
+                                                    Crea tus propias configuraciones de audio o emplea los modos creados por los desarrolladores específicamente para sus juegos mediante la App adicional de los auriculares de PS4***.
+                                                    Ajusta la configuración mientras juegas con los controles de volumen y silenciado del micrófono integrados.
+                                                </p> 
+                                                <p>
+                                                <ul>Características:
+                                                    <li>Dimensiones: 9” (22,86 cm) (alto) x 9,63” (24,46 cm) (ancho) x 4,63” (10,16 cm) (prof.)</li>
+                                                    <li>Hardware compatible: Consola PlayStation®4, Dispositivo PlayStation®VR, Dispositivos móviles, PC seleccionadas</li>
+                                                </ul>
+                                                </p>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    
+        <footer class="bg-light text-center text-lg-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">MEDIOS DE PAGO</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Mercado Pago: ofertas disponibles del sitio
+                            </li>
+                            <li>
+                                Tarjeta de débito
+                            </li>
+                            <li>
+                                Tarjeta de crédito
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">MEDIOS DE ENVIO</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Retiro por local
+                            </li>
+                            <li>
+                                Envío gratis a partir de los $15000
+                            </li>
+                            <li>
+                                Importes menores consultar envío
+                            </li>
+                        </ul>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">DATOS DEL LOCAL</h5>
+            
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Dirección: Avenida Siempreviva 742
+                            </li>
+                            <li>
+                                Teléfono: 41234567
+                            </li>
+                            <li>
+                                Horarios: Lunes a Viernes:10 a 20hs. Sábados 10 a 14 hs.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__linkarriba">
+                <a href="#arriba">Volver arriba</a>
+            </div>
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+              © 2021 Copyright. Todos los derechos reservados. Berenice Villarroel.
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!--Java-->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

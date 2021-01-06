@@ -1,0 +1,76 @@
+@media only screen and (max-width: 364px) {
+    .card .text{
+        font-size: 14px;
+        padding-top:3px ;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    form h2{
+        font-size: 18px;
+    }
+
+    .row{
+        justify-content: space-around;
+    }
+
+    .col-xs-6{
+        width: 50%;
+        padding-top: 5%;
+    }
+
+    .col-xs-4{
+        width: 30%;
+        padding: 0px;
+    }
+
+    .centrar{
+        margin: 0% 2%;
+        margin-bottom: 10%;
+    }
+
+    .centrar h2{
+        font-size: 20px;
+        /*padding: 15px;*/
+    }
+
+    .portada{
+        height: 150px;
+    }
+
+    .card-body__Titulojuego p{
+        font-size: 13px;
+    }
+
+    .card-body button{
+        font-size: 15px;
+    }
+
+    .modal-content h4{
+        font-size: 15px;
+    }
+
+    .modal-content p,ul{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+
+    .row{
+        justify-content: space-around;
+    }
+
+    .centrar{
+        margin: 0% 10%;
+        margin-bottom: 3%;
+    }
+}
+
+
+
+
