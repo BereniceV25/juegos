@@ -43,7 +43,8 @@ header {
     background-color: white; }
   header .dropdown-menu {
     /*pone este color al submenu*/
-    background: rgba(0, 0, 0, 0.301); }
+    background: rgba(0, 0, 0, 0.301);
+    top: 116%; }
     header .dropdown-menu a:hover {
       background: none;
       /*saca el fondo blanco al seleccionar el submenu*/ }
@@ -148,6 +149,7 @@ footer {
   color: black; }
 
 form {
+  margin: 30px;
   padding: 30px 15px;
   font-family: "Londrina Solid", cursive; }
   form label {
