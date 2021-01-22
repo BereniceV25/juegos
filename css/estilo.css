@@ -144,12 +144,6 @@ footer {
   background-image: linear-gradient(to bottom, #3d3393 15%, #2b76b9 47%, #2cacd1 65%, #35eb93 100%);
   font-family: "Londrina Solid", cursive;
   color: black; }
-  footer .container__linkarriba {
-    text-align: center; }
-    footer .container__linkarriba a {
-      text-decoration: none;
-      font-size: 18px;
-      color: black; }
 
 form {
   padding: 30px 15px;
