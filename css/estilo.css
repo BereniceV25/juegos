@@ -190,6 +190,8 @@ form {
   .centrar h2 {
     font-size: 20px;
     /*padding: 15px;*/ }
+  .navbar {
+    padding: .2rem 1rem; }
   .portada {
     height: 150px; }
   .card-body__Titulojuego p {

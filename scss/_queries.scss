@@ -35,6 +35,10 @@
         /*padding: 15px;*/
     }
 
+    .navbar{
+        padding: .2rem 1rem;
+    }
+
     .portada{
         height: 150px;
     }
@@ -54,6 +58,8 @@
     .modal-content p,ul{
         font-size: 12px;
     }
+
+    
 }
 
 @media only screen and (min-width: 576px) {
