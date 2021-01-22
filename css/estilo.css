@@ -5,9 +5,11 @@
   padding-left: 0px;
   font-family: 'Londrina Solid', cursive; }
 
-h1 {
+#logo a {
   font-family: 'Monoton', cursive;
-  margin-top: auto; }
+  margin-top: auto;
+  font-size: 30px;
+  text-decoration: none; }
 
 h2 {
   color: #2cacd1;
