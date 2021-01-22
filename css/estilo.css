@@ -31,6 +31,8 @@ h5 {
 
 header {
   color: white; }
+  header .fixed-top {
+    background-color: rgba(0, 0, 0, 0.301); }
   header a {
     color: white !important;
     font-family: "Londrina Solid", cursive;
