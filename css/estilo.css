@@ -192,6 +192,9 @@ form {
     /*padding: 15px;*/ }
   .navbar {
     padding: .2rem 1rem; }
+  button .navbar-toggler-icon {
+    height: 20px;
+    width: 20px; }
   .portada {
     height: 150px; }
   .card-body__Titulojuego p {
