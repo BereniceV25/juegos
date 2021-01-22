@@ -10,6 +10,11 @@ $font:'Londrina Solid', cursive;
 //header//
 header{
     color: $colorletras;
+
+    .fixed-top{
+        background-color: rgba(0, 0, 0, 0.301);
+    }
+
     a{
         color: $colorletras !important;
         font-family: $font;
