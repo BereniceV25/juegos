@@ -30,7 +30,7 @@ header{
     }
 
     .dropdown-menu{ /*pone este color al submenu*/
-        background: $colorFondo;
+        background: rgba(0, 0, 0, 0.301);
 
         & a:hover{
             background: none; /*saca el fondo blanco al seleccionar el submenu*/

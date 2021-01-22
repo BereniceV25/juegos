@@ -43,7 +43,7 @@ header {
     background-color: white; }
   header .dropdown-menu {
     /*pone este color al submenu*/
-    background: black; }
+    background: rgba(0, 0, 0, 0.301); }
     header .dropdown-menu a:hover {
       background: none;
       /*saca el fondo blanco al seleccionar el submenu*/ }
