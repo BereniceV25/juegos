@@ -147,6 +147,8 @@ footer {
   background-image: linear-gradient(to bottom, #3d3393 15%, #2b76b9 47%, #2cacd1 65%, #35eb93 100%);
   font-family: "Londrina Solid", cursive;
   color: black; }
+  footer .margenTopBottomFooter {
+    padding: 1% 0%; }
 
 form {
   margin: 30px;
