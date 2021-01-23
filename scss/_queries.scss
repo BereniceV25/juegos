@@ -73,6 +73,14 @@
     .modal-content p,ul{
         font-size: 12px;
     }   
+
+    h5{ //footer titulo de pago, envio, datos del local
+        font-size: 15px;
+    }
+        
+    .text-center{ // copyright
+        font-size: 12px;
+    }
 }
 
 @media only screen and (min-width: 576px) {
@@ -89,7 +97,4 @@
         margin-bottom: 3%;
     }
 }
-
-
-
 
